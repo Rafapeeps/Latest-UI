@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="20dp"
+	android:background="#4c4c4c">
+	<AbsoluteLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/loaderContainer"
+		android:padding="10dp"
+		android:layout_gravity="center_horizontal|center_vertical">
+		<com.felipecsl.gifimageview.library.GifImageView
+			android:id="@+id/gifImageView"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:scaleType="fitCenter"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:visibility="gone" />
+	</AbsoluteLayout>
+	<ImageView
+		android:src="@drawable/img1"
+		android:layout_width="200dp"
+		android:layout_height="150dp"
+		android:id="@+id/imageView1"
+		android:layout_gravity="center" />
+	<TextView
+		android:text="EMAIL"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:id="@+id/textView2"
+		android:textSize="15dp"
+		android:textColor="#ffeceff1"
+		android:layout_marginTop="0.0dp"
+		android:layout_marginBottom="0.0dp" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/userEmail"
+		android:textSize="15dp"
+		android:textColor="#DADADA"
+		android:hint="example@gmail.com"
+		android:inputType="textEmailAddress" />
+	<TextView
+		android:text="PASSWORD"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:id="@+id/textView3"
+		android:textSize="15dp"
+		android:textColor="#ffeceff1" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/userPassword"
+		android:textSize="15dp"
+		android:password="false"
+		android:hint="*****"
+		android:textColor="#DADADA"
+		android:inputType="textPassword" />
+	<Button
+		android:text="Login"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnLogins" />
+	<ListView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/userList" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_horizontal|center_vertical">
+		<TextView
+			android:text="Are you a newbie?"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/Signup"
+			android:layout_marginRight="0.0dp"
+			android:textColor="@android:color/background_light" />
+		<TextView
+			android:text=" Sign Up"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor = "#DADADA"
+			android:id="@+id/btnSignUp"/>
+	</LinearLayout>
+</LinearLayout>

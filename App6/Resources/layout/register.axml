@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#DADADA"
+	android:padding="20dp"
+	android:verticalScrollbarPosition="right"
+	android:scrollbars="vertical"
+	android:showDividers="none">
+	<TextView
+		android:text="Registration Form"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25dp"
+		android:minHeight="25dp"
+		android:id="@+id/textView1"
+		android:textSize="20dp"
+		android:layout_marginLeft="0.0dp"
+		android:layout_marginRight="0.0dp"
+		android:padding="20dp"
+		android:textStyle="bold"
+		android:gravity="center"
+		android:layout_marginBottom="27.0dp"
+		android:layout_marginTop="5dp"
+		android:paddingTop="200dp"
+		android:paddingBottom="200dp"
+		android:textColor="@android:color/black" />
+  <TextView
+    android:text="NAME"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView2"
+    android:textSize="15dp"
+    android:textStyle="bold"
+    android:includeFontPadding="false"
+    android:textColor="#ff263238" />
+	<EditText
+		android:layout_width="350dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/firstLastName"
+		android:hint="Your full name"
+		android:inputType="none|textEmailAddress"
+		android:drawableStart="#ff000000"
+    android:textColor = "@android:color/black"
+		android:textSize="15dp" />
+  <TextView
+    android:text="USERNAME"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView3"
+    android:textSize="15dp"
+    android:textStyle="bold"
+    android:textColor="#ff263238"
+    android:freezesText="false"
+    android:paddingTop="10dp" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/userName"
+		android:hint="Username"
+		android:textColor = "@android:color/black"
+		android:textSize="15dp" />
+  <TextView
+    android:text="EMAIL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:id="@+id/textView4"
+    android:textColor="#ff263238"
+    android:textSize="15dp"
+    android:paddingTop="10dp" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/userEmail"
+		android:textColor = "@android:color/black"
+		android:textSize="15dp"
+		android:hint="example@gmail.com" />
+  <TextView
+    android:text="PASSWORD"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:id="@+id/textView5"
+    android:textAlignment="gravity"
+    android:textSize="15dp"
+    android:shadowColor="#fff5f5f5"
+    android:textColor="#ff263238"
+    android:paddingTop="10dp" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/userPass"
+    android:inputType="none|textPassword"
+		android:textColor = "@android:color/black"
+		android:textSize="15dp"
+		android:hint="*****" />
+  <TextView
+    android:text="CONFIRM PASSWORD"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:id="@+id/textView6"
+    android:textSize="15dp"
+    android:textColor="#ff263238"
+    android:paddingTop="10dp" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/confirmPass"
+    android:inputType="none|textPassword"
+		android:textColor = "@android:color/black"
+		android:textSize="15dp"
+		android:hint="*****" />
+  <Button
+    android:text="Create Account"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:id="@+id/btnSignUp"
+    android:clickable="true"
+    android:gravity="center"
+    android:layout_gravity="end"
+    android:layout_marginTop="15dp" />
+</LinearLayout>
